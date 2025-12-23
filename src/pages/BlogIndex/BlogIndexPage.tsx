@@ -5,7 +5,7 @@ export default function BlogIndexPage(){
 
     return(
         <>
-            <h2>Post</h2>
+            <h2>Activity</h2>
             {
                 /*
                  Main Page: Show all Blogs
@@ -16,7 +16,7 @@ export default function BlogIndexPage(){
                             posts.map((post) => 
                             <Link 
                             key={post.id}
-                            to={post.slug}>
+                            to={`/blog/${post.id}/${post.title}/${post.content}`}>
                                 {post.title}
                             </Link>)
                         }

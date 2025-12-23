@@ -26,7 +26,7 @@ function App() {
           </Route>
           <Route path="/blogs-index" element={<BlogIndexPage />}>
           </Route>
-          <Route path="/blog/:slug" element={<BlogPostPage />}>
+          <Route path="/blog/:id/:title/:content" element={<BlogPostPage />}>
           </Route>
           <Route path="*" element={<NotFoundPage />}>
           </Route>
